@@ -137,7 +137,7 @@ body{
          align-items: center;
 
           /* to get the transition */
-         transform: translateX(100%);
+         transform: translateX(-100%);
          transition: all 0.5s linear;
         
 
