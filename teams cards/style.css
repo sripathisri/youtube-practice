@@ -1,0 +1,56 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.team-wrapper{
+    background: #2c2d33;
+    padding-bottom: 15px;
+    
+    
+}
+
+.section-titile{
+    padding: 40px 0px;
+}
+
+.section-titile h2{
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.team-item{
+    position: relative;
+    background: #424248;
+    margin: 15px 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.item-meta{
+    position:absolute ;
+    background: #424248;
+    width: 100%;
+    /* height: 100%; */
+    bottom:-35px ;
+    left: 0; 
+    padding: 10px 20px;
+    transition: all .5s;
+
+}
+
+.team-item:hover .item-meta{
+    bottom: 0px;
+}
+
+.team-item h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+.item-meta h6{
+    color: #ff8100;
+}
+
