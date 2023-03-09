@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Card</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: linear-gradient(45deg,#061de3,#e306ca);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(221, 221, 221);
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content:center ;
+            align-items: center;
+            
+        }
+
+        .container1{
+            width: 250px;
+            height: 300px;
+            perspective: 1000px;
+            margin: 10px 0;
+        }
+
+        .container1:hover > .card1{
+            cursor: pointer;
+            transform: rotateY(180deg) rotateZ(-180deg);
+
+        }
+
+        .card1{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            transition: transform 1500ms;
+            transform-style: preserve-3d;
+        }
+
+        
+
+        .front,.back{
+            height: 100%;
+            width: 100%;
+            border-radius: 2rem;
+            box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        
+
+        .back{
+            background: #3a3a3a;
+            transform: rotateY(180deg) rotateZ(-180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row  d-flex flex-row justify-content-center align-items-center">
+            <div class="grand-father col-md-3 col-sm-6 container1 ">
+                
+                    <div class="father card1">
+                        <div class="front" style=" overflow: hidden;">
+                            <img src="sri.jpeg" alt="sri" width="100%" height="100%
+                            " />
+                        </div>
+                        <div class="back">
+                            <h1>Sripathi</h1>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="col-md-3 col-sm-6 container1">
+                
+                <div class="card1" >
+                    <div class="front"  style=" overflow: hidden;">
+                        <img src="sri.jpeg" alt="sri" width="100%" height="100%
+                        " />
+                    </div>
+                    <div class="back">
+                        <h1>Sripathi</h1>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="col-md-3 col-sm-6 container1">
+                
+            <div class="card1">
+                <div class="front" style=" overflow: hidden;">
+                    <img src="sri.jpeg" alt="sri" width="100%" height="100% border-radius="2rem"
+                    />
+                </div>
+                <div class="back">
+                    <h1>Sripathi</h1>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+        
+    </div>
+    <div class="col-md-3 col-sm-6 container1">
+                
+        <div class="card1">
+            <div class="front" style=" overflow: hidden;">
+                <img src="sri.jpeg" alt="sri" width="100%" height="100%
+                " />
+            </div>
+            <div class="back">
+                <h1>Sripathi</h1>
+                <p>Web Developer</p>
+            </div>
+        </div>
+    
+</div>
+    </div>
+   
+</div>
+</body>
+</html>
