@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 10% 20% 60% 10%;
+            gap: 5px;
+        }
+
+        .header{
+            background-color: aqua;
+            grid-column: 1/5;
+        }
+        .smallbox1{
+            background-color: beige;
+           
+        }
+        .smallbox2{
+            background-color: rgba(245, 152, 13, 0.356);
+            
+        }
+        .smallbox3{
+            background-color: rgba(128, 255, 0, 0.747);
+         
+        }
+        .sidebar{
+            background-color: rgba(0, 139, 139, 0.534);
+            
+        }
+        .maincontent{
+            background-color: rgba(100, 148, 237, 0.548);
+           grid-column: 4/4;
+        }
+        
+
+        .footer{
+            background-color: rgb(223, 223, 201);
+            grid-column: 1/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="smallbox1">smallbox1</div>
+        <div class="smallbox2">smallbox2</div>
+        <div class="smallbox3">smallbox3</div>
+        <div class="maincontent">main content</div>
+        <div class="sidebar">sidebar</div>
+        
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
