@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi level DropDown</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="container1">
+        <nav class="header1">
+          <div class="memu-icons">
+            <ion-icon class="menu-outline" name="menu-outline"></ion-icon>
+            <ion-icon class="close-outline" name="close-outline"></ion-icon>
+          </div>
+          <a href="./index.html" class="logo1">
+            <img class="logo" src="./SNAD Horizontal Logo Main.png" alt="" />
+          </a>
+          <ul class="nav-list ">
+            <li><a href="#">Home </a></li>
+            <li>
+              <a href="#"
+                >About<ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <ul class="sub_menu">
+                <li><a href="#">Company over view </a></li>
+                <li><a href="#">Leadershio</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                >It services
+                <ion-icon name="caret-down-outline"></ion-icon>
+              </a>
+              <ul class="sub_menu">
+                <li>
+                  <a href="#"
+                    >Mocrosoft
+                    <ion-icon name="caret-down-outline"></ion-icon>
+                  </a>
+                  <ul class="sub_menu">
+                    <li><a href="#">Azure</a></li>
+                    <li><a href="#">Sql</a></li>
+                    <li><a href="#">.net</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Oracle</a>
+                  <ul class="sub_menu">
+                    <li><a href="#">Azure</a></li>
+                    <li><a href="#">Sql</a></li>
+                    <li><a href="#">.net</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Sales Force</a>
+                  <ul class="sub_menu">
+                    <li><a href="#">Azure</a></li>
+                    <li><a href="#">Sql</a></li>
+                    <li><a href="#">.net</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Solutions</a></li>
+            <li>
+              <a href="#"
+                >Careers<ion-icon name="caret-down-outline"></ion-icon
+              ></a>
+              <ul class="sub_menu">
+                <li><a href="#">Why Join US </a></li>
+                <li><a href="#">Current openings</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact uS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      const mobile_nav = document.querySelector(".memu-icons");
+
+      const nav_header = document.querySelector(".header1");
+
+      const toggleNavbar = () => {
+        nav_header.classList.toggle("active");
+      };
+
+      mobile_nav.addEventListener("click", () => toggleNavbar());
+    </script>
+  </body>
+</html>
